@@ -168,9 +168,9 @@ function emptyGrade(studentId, subject) {
 
 function calc(g) {
     const a1 = g.w1 + g.o1 + g.q1;
-    const r1 = a1 + g.e1;
+    const r1 = (a1 + g.e1)/2;
     const a2 = g.w2 + g.o2 + g.q2;
-    const r2 = a2 + g.e2;
+    const r2 = (a2 + g.e2)/2;
     return [a1, r1, a2, r2, (r1 + r2) / 2].map((n) => Number.isInteger(n) ? n : n.toFixed(1));
 }
 
