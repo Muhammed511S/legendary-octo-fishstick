@@ -343,4 +343,46 @@ body:has(.grades-table) .page-shell {
     .stat-card strong {
         font-size: 32px;
     }
+
+    body:has(.grades-table) .page-shell {
+        width: min(100% - 12px, 100%);
+    }
+
+    .table-panel.wide {
+        padding: 12px;
+    }
+
+    .table-panel.wide h2,
+    #save-grades {
+        width: 100%;
+    }
+
+    #save-grades {
+        margin: 0 0 10px;
+    }
+
+    .table-scroll {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .grades-table {
+        table-layout: auto;
+        min-width: 1080px;
+    }
+
+    .grades-table td:first-child,
+    .grades-table th:first-child {
+        width: 140px;
+    }
+
+    .grades-table th,
+    .grades-table td {
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+
+    .grade-input {
+        min-width: 64px;
+    }
 }
